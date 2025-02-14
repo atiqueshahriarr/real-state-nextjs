@@ -32,12 +32,12 @@ const Navbar = () => {
                     <Image
                         height={87}
                         width={85}
-                        src={'/myPhoto.jpg'}
+                        src={'/logo.png'}
                         alt={'Logo'}
                     ></Image>
                 </div>
                 <div className="flex items-center justify-between gap-14">
-                    <div className="flex gap-12 text-[16px] font-semibold list-none">
+                    <div className="flex gap-12 text-[16px] font-semibold list-none text-white">
                         {navItems}
                     </div>
                     <div className={'text-[14px] font-semibold border-none '}>
