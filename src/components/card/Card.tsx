@@ -3,12 +3,18 @@ import Image from 'next/image'
 import PropTypes from 'prop-types'
 import { MdArrowOutward } from 'react-icons/md'
 
-const Card = ({ cardImage, cardTitle }) => {
+const Card = ({
+    cardImage,
+    cardTitle,
+}: {
+    cardImage: string
+    cardTitle: string
+}) => {
     return (
         <div>
             <div
                 className={
-                    'border border-secondary rounded-lg p-6 flex flex-col gap-4 bg-secondary bg-opacity-30'
+                    'border border-secondary rounded-lg p-6 flex flex-col gap-4 bg-secondary bg-opacity-60'
                 }
             >
                 <Image
