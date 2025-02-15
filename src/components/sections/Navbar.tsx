@@ -68,27 +68,31 @@ const Navbar = () => {
                         </div>
                     </div>
                 </nav>
-                {isOpen && (
-                    <div className="absolute top-14 left-0 w-full md:hidden">
-                        <div className="font-semibold list-none  py-3 bg-primary bg-opacity-60 rounded-lg flex flex-col justify-between items-center gap-2">
-                            {navItem.map((item, index) => (
-                                <>
-                                    <li
-                                        key={index}
-                                        className="w-full text-center"
-                                    >
-                                        <a
-                                            href="#"
-                                            className="block hover:bg-white  hover:text-black py-2 cursor-pointer"
+
+                {/*Mobile Navbar*/}
+                <>
+                    {isOpen && (
+                        <div className="absolute top-14 left-0 w-full md:hidden">
+                            <div className="font-semibold list-none  py-3 bg-primary bg-opacity-60 rounded-lg flex flex-col justify-between items-center gap-2">
+                                {navItem.map((item, index) => (
+                                    <>
+                                        <li
+                                            key={index}
+                                            className="w-full text-center"
                                         >
-                                            {item.title}
-                                        </a>
-                                    </li>
-                                </>
-                            ))}
+                                            <a
+                                                href="#"
+                                                className="block hover:bg-white  hover:text-black py-2 cursor-pointer"
+                                            >
+                                                {item.title}
+                                            </a>
+                                        </li>
+                                    </>
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                )}
+                    )}
+                </>
             </div>
         </div>
     )

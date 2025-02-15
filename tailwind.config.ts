@@ -10,7 +10,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                nunito: ['var(--font-nunito)'],
+                nunito: ['Nunito', 'sans-serif'],
                 poppins: ['var(--font-poppins)'],
             },
             colors: {
