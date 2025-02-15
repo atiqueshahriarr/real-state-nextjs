@@ -6,29 +6,34 @@ const Banner = () => {
         <div>
             <div className="bg-[url(/bannerImage.jpg)] bg-cover min-h-screen bg-center bg-no-repeat">
                 <div className="flex flex-col min-h-screen justify-center items-center text-white text-center ">
-                    <div className="flex gap-2">
+                    <div className="flex items-center gap-2">
                         <Image
                             src={'/logo.png'}
                             alt={''}
-                            height={24}
-                            width={24}
+                            height={0}
+                            width={0}
+                            className="h-[13.5px] w-[15px]"
                         ></Image>
-                        <p className={'text-[16px] font-bold'}>
+                        <p className={'text-[14px] md:text-[16px] font-bold'}>
                             Real State Agency
                         </p>
                     </div>
                     <h1
                         className={
-                            'text-8xl font-bold leading-[95px] max-w-6xl'
+                            'text-3xl leading-8 md:text-8xl font-bold md:leading-[95px] max-w-sm md:max-w-6xl'
                         }
                     >
                         Miami Real Estate Specialists
                     </h1>
-                    <p className={'text-[16px] max-w-2xl mt-6'}>
+                    <p
+                        className={
+                            'text-sm md:text-md max-w-sm md:max-w-2xl mt-4 md:mt-6'
+                        }
+                    >
                         your specialists in residential and commercial
                         properties. From dream homes to prime business spaces,
                         trust our unique expertise to guide you in Miami/South
-                        Florida's dynamic market
+                        Florida&apos;s dynamic market
                     </p>
                 </div>
             </div>
