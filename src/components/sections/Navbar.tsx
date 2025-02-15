@@ -22,41 +22,41 @@ const Navbar = () => {
                     />
 
                     {/*Menubar*/}
-                    <div className="flex items-center justify-between md:gap-8 lg:gap-12">
-                        <div className="hidden md:block">
-                            <div className="flex gap-5 lg:gap-7 xl:gap-8 list-none">
+                    <div className="flex items-center justify-between md:gap-6 lg:gap-8">
+                        <div className="hidden lg:block">
+                            <ul className="flex gap-4 lg:gap-4 xl:gap-6 ">
                                 {navItem.map((item, index) => (
-                                    <>
-                                        <li
-                                            key={index}
-                                            className="hover:bg-white hover:w-full text-center rounded  hover:text-primary py-1 hover:px-2"
+                                    <li key={index} className="text-center ">
+                                        <a
+                                            href="#"
+                                            className="hover:bg-secondary px-2 py-2 hover:text-primary rounded transition-all duration-300 ease-in-out"
                                         >
-                                            <a href="#">{item.title}</a>
-                                        </li>
-                                    </>
+                                            {item.title}
+                                        </a>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                         </div>
 
                         <div className="flex items-center gap-4">
                             {/*Hamburger Menu*/}
                             <div
-                                className="md:hidden cursor-pointer w-10 h-10 flex items-center justify-center bg-secondary bg-opacity-5 border border-gray-400"
+                                className="lg:hidden cursor-pointer w-10 h-10 flex items-center justify-center bg-secondary bg-opacity-5 border border-gray-400"
                                 onClick={() => setIsOpen(!isOpen)}
                             >
                                 <RxHamburgerMenu className="text-2xl" />
                             </div>
 
                             {/*Right Button - Mobile Device*/}
-                            <div className="md:hidden ">
-                                <select className="appearance-none outline-none cursor-pointer text-xl font-normal border bg-transparent border-primary  h-10 w-10 text-center font-nunito">
+                            <div className="lg:hidden ">
+                                <select className="appearance-none outline-none cursor-pointer text-lg font-normal border bg-transparent border-primary  h-10 w-10 text-center font-nunito">
                                     <option className="bg-primary">ES</option>
                                     <option className="bg-primary">ESP</option>
                                 </select>
                             </div>
 
                             {/*Right Button*/}
-                            <div className="hidden md:block relative ">
+                            <div className="hidden lg:block relative ">
                                 <select className="appearance-none outline-none bg-primary w-14 h-10 pl-2 text-sm rounded-[10px] ">
                                     <option>ES</option>
                                     <option>ESP</option>
@@ -72,8 +72,8 @@ const Navbar = () => {
                 {/*Mobile Navbar*/}
                 <>
                     {isOpen && (
-                        <div className="absolute top-14 left-0 w-full md:hidden">
-                            <div className="font-semibold list-none  py-3 bg-primary bg-opacity-60 rounded-lg flex flex-col justify-between items-center gap-2">
+                        <div className="absolute top-14 left-0 w-full lg:hidden">
+                            <div className="font-semibold list-none  py-3 bg-primary/90 rounded-lg flex flex-col justify-between items-center gap-2">
                                 {navItem.map((item, index) => (
                                     <>
                                         <li
@@ -82,7 +82,7 @@ const Navbar = () => {
                                         >
                                             <a
                                                 href="#"
-                                                className="block hover:bg-white  hover:text-black py-2 cursor-pointer"
+                                                className="block hover:bg-white hover:text-black transition-all duration-300 ease-in-out py-2 cursor-pointer"
                                             >
                                                 {item.title}
                                             </a>

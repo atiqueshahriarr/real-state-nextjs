@@ -4,13 +4,10 @@ import Image from 'next/image'
 const Banner = () => {
     return (
         <div>
-            {/*Banner Image*/}
-            <div className="bg-[url(/bannerImage.jpg)] bg-cover min-h-screen bg-center bg-no-repeat text-white text-center font-bold font-poppins">
-                {/*Banner Overlay*/}
-                <div className="absolute inset-0 bg-black opacity-30"></div>
+            <div className="bg-[url(/bannerImage.jpg)] bg-cover h-[70vh] md:h-screen  bg-center bg-no-repeat text-white text-center font-bold font-poppins">
+                <div className="absolute h-[70vh] md:h-screen inset-0 bg-black opacity-30"></div>
 
-                {/*Banner Content*/}
-                <div className="relative flex flex-col min-h-screen justify-center items-center space-y-2 md:space-y-4 ">
+                <div className="relative flex flex-col h-[70vh] md:h-screen justify-center items-center space-y-2 md:space-y-4 ">
                     <div className="flex items-center gap-2 ">
                         <Image
                             src={'/logo.png'}

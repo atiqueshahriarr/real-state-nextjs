@@ -1,6 +1,7 @@
 import Navbar from '@/components/sections/Navbar'
 import Banner from '@/components/sections/Banner'
-import MiamiDadeCounty from '@/components/sections/MiamiDadeCounty'
+
+import Body from '@/components/sections/Body'
 
 export default function Home() {
     return (
@@ -8,7 +9,7 @@ export default function Home() {
             <Navbar />
             <Banner />
             <div className="w-11/12  lg:w-3/4 mx-auto my-10 mb-60">
-                <MiamiDadeCounty />
+                <Body />
             </div>
         </div>
     )
