@@ -4,8 +4,9 @@ import Image from 'next/image'
 const Banner = () => {
     return (
         <div>
-            <div className="bg-[url(/bannerImage.jpg)] bg-cover min-h-screen bg-center bg-no-repeat">
-                <div className="flex flex-col min-h-screen justify-center items-center text-white text-center ">
+            <div className="bg-[url(/bannerImage.jpg)] bg-cover min-h-screen bg-center bg-no-repeat ">
+                <div className="absolute inset-0 bg-black opacity-30"></div>
+                <div className="relative flex flex-col min-h-screen justify-center items-center text-white text-center ">
                     <div className="flex items-center gap-2">
                         <Image
                             src={'/logo.png'}
@@ -20,7 +21,7 @@ const Banner = () => {
                     </div>
                     <h1
                         className={
-                            'text-3xl leading-8 md:text-8xl font-bold md:leading-[95px] max-w-sm md:max-w-6xl'
+                            ' text-3xl leading-8 md:text-8xl font-bold md:leading-[95px] max-w-sm md:max-w-6xl'
                         }
                     >
                         Miami Real Estate Specialists
